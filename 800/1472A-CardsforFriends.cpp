@@ -13,13 +13,14 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    int n,a=0;
-    cin>>n;
-    string s;
-    for(int i=0;i<n;i++){
-        if(s[i]=='-')a-=max(0,a-1);
-        else a++;
+    w(t){
+        int w,h,n;
+        cin>>w>>h>>n;
+        int sum=1;
+        while(w%2==0){sum*=2;w/=2;}
+        while(h%2==0){sum*=2;h/=2;}
+        if(sum>=n)cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
     }
-    cout<<a;
     return 0;
 }

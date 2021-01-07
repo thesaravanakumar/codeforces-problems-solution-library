@@ -16,8 +16,9 @@ int main()
     int n,a=0;
     cin>>n;
     string s;
+    cin>>s;
     for(int i=0;i<n;i++){
-        if(s[i]=='-')a-=max(0,a-1);
+        if(s[i]=='-')a=max(0,a-1);
         else a++;
     }
     cout<<a;

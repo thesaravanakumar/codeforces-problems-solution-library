@@ -13,13 +13,19 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    int n,a=0;
-    cin>>n;
-    string s;
-    for(int i=0;i<n;i++){
-        if(s[i]=='-')a-=max(0,a-1);
-        else a++;
+    w(t){
+        int n;
+        cin >> n;
+        int a[n];
+        for (int i = 0; i < n; i++)
+            cin >> a[i];
+        set<int> s;
+        for (int i = 1; i < n; i++)
+        {
+            for (int j = 0; j < i; j++)
+                s.insert(a[i] - a[j]);
+        }
+        cout << s.size() << endl;
     }
-    cout<<a;
     return 0;
 }

@@ -13,13 +13,12 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    int n,a=0;
-    cin>>n;
-    string s;
-    for(int i=0;i<n;i++){
-        if(s[i]=='-')a-=max(0,a-1);
-        else a++;
+    w(t){
+        int n,j=0;
+        cin>>n;
+        string s;
+        cin>>s;
+        cout<<(regex_match(s,regex(".*2020|2.*020|20.*20|202.*0|2020.*"))?"YES\n":"NO\n");
     }
-    cout<<a;
     return 0;
 }
