@@ -13,15 +13,23 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s;
-    cin>>s;
-    for(int i=s.size()-1;i>=0;i--){
-        if (s[i] >= 97 && s[i] <= 122 || s[i] >= 65 && s[i] <= 90){
-            s[i]=tolower(s[i]);
-            if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||s[i]=='y')
-            {cout<<"YES";break;}
-            else {cout<<"NO";break;}
-        }
+    int n,c;
+    cin>>n>>c;
+    int a[n],t[n];
+    for(int i=0;i<n;i++)cin>>a[i];
+    for(int j=0;j<n;j++)cin>>t[j];
+    int b=0,e=0,e1=0;
+    for(int i=0;i<n;i++){
+        b+=t[i];
+        e+=max(0,a[i]-c*b);
     }
+    b=0;
+    for(int i=n-1;i>=0;i--){
+        b+=t[i];
+        e1+=max(0,a[i]-c*b);
+    }
+    if(e>e1)cout<<"Limak";
+    else if(e==e1)cout<<"Tie";
+    else cout<<"Radewoosh";
     return 0;
 }

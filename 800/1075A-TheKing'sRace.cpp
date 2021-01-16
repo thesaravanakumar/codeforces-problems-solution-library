@@ -13,15 +13,8 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s;
-    cin>>s;
-    for(int i=s.size()-1;i>=0;i--){
-        if (s[i] >= 97 && s[i] <= 122 || s[i] >= 65 && s[i] <= 90){
-            s[i]=tolower(s[i]);
-            if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||s[i]=='y')
-            {cout<<"YES";break;}
-            else {cout<<"NO";break;}
-        }
-    }
+    ll n,x,y;
+    cin>>n>>x>>y;
+    cout<<(max(x-1,y-1)>max(n-x,n-y)?"Black":"White");
     return 0;
 }

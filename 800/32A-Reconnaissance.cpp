@@ -13,15 +13,15 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s;
-    cin>>s;
-    for(int i=s.size()-1;i>=0;i--){
-        if (s[i] >= 97 && s[i] <= 122 || s[i] >= 65 && s[i] <= 90){
-            s[i]=tolower(s[i]);
-            if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||s[i]=='y')
-            {cout<<"YES";break;}
-            else {cout<<"NO";break;}
+    int n,d;
+    cin>>n>>d;
+    int a[n],s=0;
+    for(int i=0;i<n;i++)cin>>a[i];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            if(abs(a[i]-a[j])<=d)s++;
         }
     }
+    cout<<s-n;
     return 0;
 }

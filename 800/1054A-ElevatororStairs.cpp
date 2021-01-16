@@ -13,15 +13,9 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s;
-    cin>>s;
-    for(int i=s.size()-1;i>=0;i--){
-        if (s[i] >= 97 && s[i] <= 122 || s[i] >= 65 && s[i] <= 90){
-            s[i]=tolower(s[i]);
-            if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'||s[i]=='y')
-            {cout<<"YES";break;}
-            else {cout<<"NO";break;}
-        }
-    }
+    int x,y,z,t1,t2,t3;
+    cin>>x>>y>>z>>t1>>t2>>t3;
+    if(abs(x-y)*t1<(abs(z-x)*t2+abs(x-y)*t2+3*t3))cout<<"NO";
+    else cout<<"YES";
     return 0;
 }
