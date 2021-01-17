@@ -13,14 +13,15 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s,a="heidi";
-    int j=0;
-    cin >> s;
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] == a[j])
-            j++;
+    int n;
+    cin>>n;
+    int a,sum=0;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            cin>>a;
+            if(i==j||i+j==n+1||i==(n+1)/2||j==(n+1)/2)sum+=a;
+        }
     }
-    cout << (j == 5 ? "YES" : "NO");
+    cout<<sum;
     return 0;
 }

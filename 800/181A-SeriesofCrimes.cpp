@@ -13,14 +13,20 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s,a="heidi";
-    int j=0;
-    cin >> s;
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] == a[j])
-            j++;
-    }
-    cout << (j == 5 ? "YES" : "NO");
+    int n,m,x=0,y=0,i,j;
+	cin>>n>>m;
+	for(i=0;i<n;i++){
+		for(j=0;j<m;j++){
+			char t;
+			cin>>t;
+			if(t=='*'){
+				x=x^i;
+				y=y^j;
+			}
+		}
+	}
+	x++;
+	y++;
+	cout<<x<<" "<<y<<endl;
     return 0;
 }

@@ -13,14 +13,17 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s,a="heidi";
-    int j=0;
-    cin >> s;
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] == a[j])
-            j++;
+    int n;
+    cin>>n;
+    int a[n+1],mx=0,in;
+    for(int i=1;i<=n;i++){
+        cin>>a[i];
+        if(mx<a[i]){
+            in=i;
+            mx=a[i];
+        }
     }
-    cout << (j == 5 ? "YES" : "NO");
+    sort(a+1,a+n+1);
+    cout<<in<<" "<<a[n-1];
     return 0;
 }

@@ -13,14 +13,16 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s,a="heidi";
-    int j=0;
-    cin >> s;
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] == a[j])
-            j++;
+    int p,a,b,n,min=INT_MAX;
+    cin>>n;
+    for(int i=1;i<=sqrt(n);i++){
+        if(n%i==0){
+            a=i;
+            b=n/i;
+        }
+        p=2*a+2*b;
+        if(p<min)min=p;
     }
-    cout << (j == 5 ? "YES" : "NO");
+    cout<<min;
     return 0;
 }

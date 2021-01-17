@@ -13,14 +13,14 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s,a="heidi";
-    int j=0;
-    cin >> s;
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] == a[j])
-            j++;
+    string s;
+    cin>>s;
+    int i=s.find('.');
+    if(s[i-1]!='9'){
+        if(s[i+1]>='5')s[i-1]++;
+        cout<<s.substr(0,i);
     }
-    cout << (j == 5 ? "YES" : "NO");
+    else
+        cout << "GOTO Vasilisa.";
     return 0;
 }

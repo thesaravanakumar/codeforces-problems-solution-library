@@ -9,18 +9,18 @@
 #define mii           map<int,int>
 #define sp(x,y)       fixed<<setprecision(y)<<x
 using namespace std;
+int k,l,m;
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s,a="heidi";
-    int j=0;
-    cin >> s;
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] == a[j])
-            j++;
-    }
-    cout << (j == 5 ? "YES" : "NO");
+    string s;
+    cin>>s;
+    for(char c:s){
+    if(c>='A'&&c<='Z')k=1;
+    if(c>='a'&&c<='z')l=1;
+    if(c>='0'&&c<='9')m=1;
+}
+cout<<(s.size()>=5&&k+l+m==3?"Correct":"Too weak");
     return 0;
 }

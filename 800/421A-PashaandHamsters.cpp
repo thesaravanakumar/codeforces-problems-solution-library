@@ -13,14 +13,21 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s,a="heidi";
-    int j=0;
-    cin >> s;
-    for (int i = 0; i < s.size(); i++)
+    int n, a, b, f[101], i;
+    cin >> n >> a >> b;
+    for (i = 1; i <= a; i++)
     {
-        if (s[i] == a[j])
-            j++;
+        int x;
+        cin >> x;
+        f[x] = 1;
     }
-    cout << (j == 5 ? "YES" : "NO");
+    for (i = 1; i <= b; i++)
+    {
+        int y;
+        cin >> y;
+        f[y] = 2;
+    }
+    for (i = 1; i <= n; i++)
+        cout << f[i] << " ";
     return 0;
 }

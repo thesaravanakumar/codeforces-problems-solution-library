@@ -13,14 +13,11 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    string s,a="heidi";
-    int j=0;
-    cin >> s;
-    for (int i = 0; i < s.size(); i++)
-    {
-        if (s[i] == a[j])
-            j++;
-    }
-    cout << (j == 5 ? "YES" : "NO");
+    int n,j,k;
+	cin>>n>>j>>k;
+	int a[n];
+	for(int i=0;i<n;i++)  cin>>a[i];
+	sort(a,a+n);
+	cout<<a[n-j]-a[n-j-1];
     return 0;
 }
