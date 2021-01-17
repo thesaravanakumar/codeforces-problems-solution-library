@@ -9,17 +9,22 @@
 #define mii           map<int,int>
 #define sp(x,y)       fixed<<setprecision(y)<<x
 using namespace std;
-int a[3];
+bool a[301];
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    w(t){
-        int n,x,y;
-        cin>>n>>x>>y;
-        a[n]+=x-y;
+    int p, n, k, i;
+    cin >> p >> n;
+    for (i = 1; i <= n; i++)
+    {
+        cin >> k;
+        if (a[k % p] == 1)
+        {
+            cout << i;
+            return 0;
+        }
+        a[k % p] = 1;
     }
-    cout<<(a[1]>=0?"LIVE":"DEAD")<<endl;
-    cout<<(a[2]>=0?"LIVE":"DEAD");
-    return 0;
+    cout << -1;
 }
