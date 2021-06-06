@@ -84,7 +84,7 @@ Solution Repo for Codeforces problems. It will be updated constantly.⚡
 | **97** | [Educational Codeforces Round 97](http://codeforces.com/contest/1430)| **107** | [Educational Codeforces Round 107](http://codeforces.com/contest/1499)
 | **98** | [Educational Codeforces Round 98](http://codeforces.com/contest/1437)| **108** | [Educational Codeforces Round 108](http://codeforces.com/contest/1511)
 | **99** | [Educational Codeforces Round 99](http://codeforces.com/contest/1452)| **109** | [Educational Codeforces Round 109](http://codeforces.com/contest/1519)
-| **100** | [Educational Codeforces Round 100](http://codeforces.com/contest/1455)|
+| **100** | [Educational Codeforces Round 100](http://codeforces.com/contest/1455)| **110** | [Educational Codeforces Round 110](https://codeforces.com/contest/1535)
 
 This will be updated after each round.
 </p>
