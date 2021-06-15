@@ -27,7 +27,7 @@ Solution Repo for Codeforces problems. It will be updated constantly.⚡
 | **35** | [Codeforces Round #617](http://codeforces.com/contest/1296)| **45** | [Codeforces Round #656](http://codeforces.com/contest/1385)| **55** | [Codeforces Round #710](http://codeforces.com/contest/1506)
 | **36** | [Codeforces Round #624](http://codeforces.com/contest/1311)| **46** | [Codeforces Round #661](http://codeforces.com/contest/1399)| **56** | [Codeforces Round #713](http://codeforces.com/contest/1512)
 | **37** | [Codeforces Round #627](http://codeforces.com/contest/1324)| **47** | [Codeforces Round #667](http://codeforces.com/contest/1409)| **57** | [Codeforces Round #719](http://codeforces.com/contest/1520)
-| **38** | [Codeforces Round #629](http://codeforces.com/contest/1328)| **48** | [Codeforces Round #674](http://codeforces.com/contest/1426)
+| **38** | [Codeforces Round #629](http://codeforces.com/contest/1328)| **48** | [Codeforces Round #674](http://codeforces.com/contest/1426)| **58** | [Codeforces Round #725](http://codeforces.com/contest/1538)
 | **39** | [Codeforces Round #634](http://codeforces.com/contest/1335)| **49** | [Codeforces Round #677](http://codeforces.com/contest/1433)
 | **40** | [Codeforces Round #636](http://codeforces.com/contest/1343)| **50** | [Codeforces Round #686](http://codeforces.com/contest/1454)
 
